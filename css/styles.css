@@ -1,0 +1,600 @@
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.navbar-color{
+    background-color: rgba(4, 4, 4, .6);
+}
+.navbar-color a{
+    color: white;
+}
+.navbar-color a:hover{
+    color: white;
+}
+
+.dropdown-menu a{
+    color: black;
+}.dropdown-menu a:hover{
+    color: black;
+}
+
+:root {
+    --indigo: rgb(79, 70, 229);
+    --indigo-200: rgb(199 210 254);
+    --white: #fff;
+    --mostly-black: #222;
+    --zinc-200: rgb(228, 228, 231);
+    --whitish: #f3f3f3;
+    --slate: rgb(203, 213, 225);
+    --slate-500: rgb(100, 116, 139);
+    --slate-900: rgb(15, 23, 42);
+    --box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.25),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --max-width-lg: 1240px;
+    --max-width-md: 28rem;
+    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+  }
+
+.nav-item::after{content:'';
+    display:block;
+    width:0px;
+    height:2px;
+    background:white
+    ;transition: 0.2s;
+}
+
+
+.nav-item:hover::after{
+    width:100%;}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#fec400;}
+.nav-link{
+    
+    transition:0.2s;}
+.dropdown-item.active, .dropdown-item:active{
+    color:#212529;}
+.dropdown-item:focus, .dropdown-item:hover{
+    background:white;}
+  
+  
+  
+    .backg {
+        overflow: hidden;
+        width: 100%;
+        background-image: url("hero-bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+        height: 100vh;
+    }
+    
+    .layout {
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-size: cover;
+        height: 100vh;
+    }
+    
+ .hero{
+    color: white;
+ }
+ .hero h1{
+    
+
+font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 72px;
+font-style: normal;
+font-variant-caps: normal;
+font-variant-east-asian: normal;
+font-variant-ligatures: normal;
+font-variant-numeric: normal;
+font-weight: 600;
+ }
+ .hero h2{
+    font-size:40px;
+ }
+ .hero h1,h2{
+    margin-bottom:6%;
+ }
+ .hero h2::after {
+    content: " |";
+    animation-name: typing;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+.navbar-toggler-icon {
+    background-color: white ;
+}
+@keyframes typing {
+    0% {
+        content: " |";
+    }
+
+    2% {
+        content: " d|";
+    }
+
+    3% {
+        content: " de|";
+    }
+
+    5% {
+        content: " dev|";
+    }
+
+    6% {
+        content: " devo|";
+    }
+
+    8% {
+        content: " devol|";
+    }
+
+    10% {
+        content: " devolo|";
+    }
+
+    12% {
+        content: " devolop |";
+    }
+
+    14% {
+        content: " devolope|";
+    }
+
+    18% {
+        content: " devoloper|";
+    }
+    20% {
+        content: " devolope|";
+    }
+
+    21% {
+        content: "devolop|";
+    }
+
+    22% {
+        content: " devol|";
+    }
+
+    23% {
+        content: " devo|";
+    }
+
+    24% {
+        content: " dev|";
+    }
+
+    25% {
+        content: "de|";
+    }
+
+    26% {
+        content: " d|";
+    }
+
+   
+
+    28% {
+        content: " a|";
+    }
+
+    29% {
+        content: " a |";
+    }
+
+    30% {
+        content: " a d|";
+    }
+
+    31% {
+        content: " a de|";
+    }
+
+    32% {
+        content: " a des|";
+    }
+
+    34% {
+        content: " a desi|";
+    }
+
+    35% {
+        content: " a desig|";
+    }
+
+    36% {
+        content: " a design|";
+    }
+
+    37% {
+        content: " a designe|";
+    }
+
+    38% {
+        content: " a designer|";
+    }
+
+    39% {
+        content: " a designe|";
+    }
+
+    40% {
+        content: " a design|";
+    }
+
+    41% {
+        content: " a desig|";
+    }
+
+    42% {
+        content: " a desi|";
+    }
+
+    43% {
+        content: " a des|";
+    }
+
+    44% {
+        content: " a de|";
+    }
+
+    46% {
+        content: " a d|";
+    }
+
+    47% {
+        content: " a |";
+    }
+
+    48% {
+        content: " a|";
+    }
+
+    49% {
+        content: "|";
+    }
+
+    49% {
+        content: "|";
+    }
+
+    50% {
+        content: " a|";
+    }
+
+    53% {
+        content: " a |";
+    }
+
+    54% {
+        content: " a f|";
+    }
+
+    55% {
+        content: " a fr|";
+    }
+
+    56% {
+        content: " a fre|";
+    }
+
+    55% {
+        content: " a free|";
+    }
+
+    57% {
+        content: " a freel|";
+    }
+
+    58% {
+        content: " a freela|";
+    }
+
+    59% {
+        content: " a freelan|";
+    }
+
+    60% {
+        content: " a freelanc|";
+    }
+
+    61% {
+        content: " a freelance|";
+    }
+
+    62% {
+        content: " a freelancer|";
+    }
+
+    63% {
+        content: " a freelance|";
+    }
+
+    64% {
+        content: " a freelanc|";
+    }
+
+    65% {
+        content: " a freelan|";
+    }
+
+    66% {
+        content: " a freela|";
+    }
+
+    67% {
+        content: " a freel|";
+    }
+
+    68% {
+        content: " a free|";
+    }
+
+    69% {
+        content: " a fre|";
+    }
+
+    70% {
+        content: " a fr|";
+    }
+
+    71% {
+        content: " a f|";
+    }
+
+    72% {
+        content: " a |";
+    }
+
+    73% {
+        content: " a|";
+    }
+
+    74% {
+        content: " |";
+    }
+
+    75% {
+        content: "|";
+    }
+
+    76% {
+        content: " a|";
+    }
+
+    77% {
+        content: " a |";
+    }
+
+    78% {
+        content: " a p|";
+    }
+
+    79% {
+        content: " a ph|";
+    }
+
+    80% {
+        content: " a pho|";
+    }
+
+    81% {
+        content: " a phot|";
+    }
+
+    82% {
+        content: " a photo|";
+    }
+
+    83% {
+        content: " a photog|";
+    }
+
+    84% {
+        content: " a photogr|";
+    }
+
+    85% {
+        content: " a photogra|";
+    }
+
+    86% {
+        content: " a photograp|";
+    }
+
+    87% {
+        content: " a photographe|";
+    }
+
+    88% {
+        content: " a photographer|";
+    }
+
+    89% {
+        content: " a photographe|";
+    }
+
+    90% {
+        content: " a photograph|";
+    }
+
+    91% {
+        content: " a photograp|";
+    }
+
+    92% {
+        content: " a photogra|";
+    }
+
+    93% {
+        content: " a photogr|";
+    }
+
+    94% {
+        content: " a photog|";
+    }
+
+    95% {
+        content: " a photo|";
+    }
+
+    96% {
+        content: " a phot|";
+    }
+
+    97% {
+        content: " a pho|";
+    }
+
+    98% {
+        content: " a ph|";
+    }
+
+    99% {
+        content: " a p|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+.basic-ul {
+
+
+    list-style-type: none;
+    text-align: start;
+    display: inline-block;
+
+
+
+    font-size: 16px;
+
+    font-weight: 400;
+    color:
+        #4C4D4D
+}
+
+
+.basic-ul span {
+
+    font-weight: 600;
+    color: #333333;
+
+
+
+}
+.bars h6{
+    padding: 1.5% 0;
+    font-size:
+16px;
+color:
+RGB(78, 78, 78);
+font-weight:
+400
+}
+.about-txt h2{
+    font-size: 32px;
+padding-bottom: 8%;
+}
+
+.about-txt p{
+  padding: 2% 0;
+font-size: 1.4rem;
+color:RGB(78, 78, 78);
+font-weight: 400;
+
+}
+.pic img{
+    border-radius: 5%;
+}
+.about-back{
+    background-color: white;
+    box-shadow:var(--shadow-2xl) ;
+}
+.card{
+    text-align: center;
+}
+.ap-icon {
+    display: flex;
+    align-items: center;
+    width: 120px;
+
+height: 120px;
+justify-content: space-around;
+margin: auto;
+}
+.ap-icon i{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+
+justify-content: space-around;
+margin: auto;
+}
+.border-a{
+   border: var(--bs-border-width) var(--bs-border-style) #0078FF;
+border-width: 10px;
+}
+.ap-ico{
+ 
+}
+.ap-ico :hover {
+   transition-delay: .25s;
+    transition-duration: .5s ;
+    background: #298eff;
+    color: #fff;
+    border-color:#CDE1F8
+  }
+  .pads{
+    margin-bottom: 2%;
+
+}
+  .card{    box-shadow:var(--box-shadow) ;
+    background-color: white;
+  }
+  .sec2{
+text-align: center;
+  }
+  .card-about{
+padding: 4%;
+  }
+  
+  
+  .pads h4{
+    text-align: start;
+font-size: 19.2px;
+font-weight: 500;
+  }
+  .porto-txt p{
+    text-align: start;
+   
+font-size: 12.8px;
+
+font-weight: 400;
+
+  }
+  .porto-txt span{
+    color: #298eff;
+  }
+  .section5 img{
+    
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+  .section5 img:hover{
+
+    
+    transform: scale(1.1);
+  }
+  .card, .card-img-top{
+    overflow: hidden;
+  }
