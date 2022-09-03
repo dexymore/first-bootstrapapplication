@@ -4,9 +4,14 @@
 }
 
 .navbar-color{
+    position: fixed !important;
+   width: 100%;
+    z-index: 99;
     background-color: rgba(4, 4, 4, .6);
+left: .000000001%;
 }
 .navbar-color a{
+
     color: white;
 }
 .navbar-color a:hover{
@@ -18,7 +23,9 @@
 }.dropdown-menu a:hover{
     color: black;
 }
-
+body{
+    overflow-x: hidden;
+}
 :root {
     --indigo: rgb(79, 70, 229);
     --indigo-200: rgb(199 210 254);
@@ -562,6 +569,7 @@ border-width: 10px;
     background-color: white;
   }
   .sec2{
+    position: relative;
 text-align: center;
   }
   .card-about{
@@ -590,11 +598,307 @@ font-weight: 400;
     width: 100%;
     transition: 0.5s all ease-in-out;
   }
-  .section5 img:hover{
-
-    
-    transform: scale(1.1);
-  }
+  
   .card, .card-img-top{
     overflow: hidden;
   }
+.zoom{
+    overflow: hidden;
+}
+.zoom img{
+    transition: all 1.5s ease;
+}
+.zoom:hover img{
+    transform: scale(1.3);
+}
+.border-b{
+    border: var(--bs-border-width) var(--bs-border-style) #0078FF;
+ border-width: 3px;
+ }
+
+ .plus{
+    display: flex;
+    align-items: center;
+    width: 40px;
+
+height: 40px;
+justify-content: space-around;
+margin: auto;
+ 
+}
+ 
+.plus {
+   margin-bottom: 4%;
+}
+.ful-bg{
+    
+    background-image: url("../pics/overlay-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    height: 75vh;
+}
+
+.layout-slide {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(11, 95, 188, 0.7);
+    background-size: cover;
+    height: 75vh;
+}
+.layout-slide h3{
+    color: white;
+    margin: 1%;
+font-size: 24;
+}
+.layout-slide p{
+    color: white;
+    margin: 1%;
+    font-size: 20px;
+}
+.layout-slide img{
+ 
+    margin: 1%;
+}
+.sec2::after{
+    content:"";
+margin-top: 1%;
+    position:absolute ;
+    background-color: #0078FF;
+    width: 5%;
+    height: 6px;
+    bottom: 0%;
+    left: 47.5%;
+top: 100%;
+}
+.relat-pos{
+    position: absolute;
+}
+
+.blue-title{
+    width: 25%;
+    height: 30px;
+    position: relative;
+ left: 50%;
+background-color: #298eff;
+color: white;
+border-radius:var(--bs-card-border-radius);
+overflow: hidden;
+}
+
+
+.card-ft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-ft img{
+    width: 35px;
+    height: 35px;
+}
+.in{
+    display: inline;
+}
+.cft-img{
+    width: 50%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.cft-img p{
+    padding-top: 3%;
+
+}
+.cft-ic{
+ margin: 1%;
+    display: flex;
+    flex-direction: row;
+    padding-right: 2%;
+}
+.cft-ic i{
+    padding-top: 6%;
+    display: inline;
+padding-right: 6%;
+}
+.cft-ic i{
+    padding-top: 2%;
+  
+}
+.backg-last{
+    
+    background-image: url("../pics/overlay-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+.layout-last {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(11, 95, 188, 0.7);
+    background-size: cover;
+    height: 100vh;
+    padding-right: 50%;
+position: relative;
+}
+.bg-wht{
+    width: 100%;
+background-color: white;
+position: absolute;
+top: 15%;
+left: 5%;
+
+}
+
+.bg-wht button{
+    width: 220px;
+    border: transparent;
+    border-radius: 35px;
+    font-size: 16px;
+    size: 100px;
+    padding: 15px 20px;
+    background-color: #298eff;
+    border-color: #298eff;
+    color: white;
+    margin-top: 4%;
+margin-left: 30%;
+    transition-duration: 1s;
+    transition-delay: 1/4s;
+    box-shadow: 0px 5px 15px RGBA(0, 0, 0, 10%);}
+    .inp{
+        width: 100%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    .half{
+        padding:1% 1%;
+        
+    }
+    .mb-3{
+        margin: 4% !important;
+    }
+    .contact-icons{
+        padding: 2%;
+    }
+  .contact-icons-element{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .contact-icons-element p{
+padding-left: 3%;
+padding-bottom: 1%;
+  }
+    .contact-icons i{
+       padding-top: 1% ;
+        color: #298eff;
+        width: 12px;
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+        padding: 2%;
+    }
+    .socials i{
+        width: 65px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .border-c{
+    
+        border: var(--bs-border-width) var(--bs-border-style) #0078FF;
+     border-width: 3px;
+
+     }
+    .elment{
+      padding  : 0% 1%;
+    }
+    .elment :hover {
+        transition-delay: .25s;
+         transition-duration: .5s ;
+         background: #298eff;
+         color: #fff;
+         border-color:#CDE1F8
+       }
+       .last h5{
+       
+
+padding: 4%;
+font-size: 32px;
+
+font-weight: 500;
+
+ }
+ .last-txt{
+    
+font-size: 20px;
+
+font-weight: 300;
+padding: 2%;
+
+ }
+ .foot{
+    background-color: #123966;
+    color: #f3f3f3;
+    width: 100%;
+    height: 25vh;
+ }
+ .foot h5{
+    padding-top: 5%;
+    padding-bottom: 2%;
+
+}
+/* fourth sectionnnn */
+.backg-fourth{
+    
+    background-image: url("../pics/overlay-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    height: 65vh;
+}
+.border-fourth{
+    border:  var(--bs-border-style) #CDE1F8;;
+    border-width: 6px;
+}
+.layout-fourth {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(11, 95, 188, 0.7);
+    background-size: cover;
+    height: 65vh;
+position: relative;
+}
+.fourth-card {
+    padding-top: 10%;
+    color: #CDE1F8;
+}
+.fourth-card i {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+        justify-content: space-around;
+    margin:auto;
+
+    color: #CDE1F8;
+}
