@@ -24,6 +24,7 @@ left: .000000001%;
     color: black;
 }
 body{
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 :root {
@@ -902,3 +903,20 @@ position: relative;
 
     color: #CDE1F8;
 }
+.special-line{
+    position: relative;
+text-align: start;
+  }
+.special-line::after{
+    content:"";
+margin-top: 1%;
+    position:absolute ;
+    background-color: #0078FF;
+    width: 15%;
+    height: 4px;
+    bottom: 0%;
+    left: 4%;
+top: 75%;
+}
+
+
